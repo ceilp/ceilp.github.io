@@ -2,8 +2,9 @@ body {
   font-family: 'Roboto', sans-serif !important;
 }
 .carousel .carousel-item img {
-  max-height: 480px;
-  min-width: auto;
+  height: 480px;
+  width: 100%;
+  object-fit: cover;
 }
 .bg-gray {
   background-color: #ebeef3;

@@ -1,0 +1,57 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+.carousel .carousel-item img {
+  max-height: 480px;
+  min-width: auto;
+}
+.bg-gray {
+  background-color: #ebeef3;
+}
+.carousel-indicators {
+  bottom: 30px;
+}
+.feature h5 {
+  font-weight: 900;
+  color: #0774b9;
+}
+.feature p {
+  font-weight: 300;
+  font-size: 14px;
+}
+.feature i.fas {
+  vertical-align: middle;
+  color: #212529;
+}
+.feature h1 {
+  font-weight: 700;
+  color: #0774b9;
+}
+.search-bar input {
+  width: 330px !important;
+}
+.search-bar button {
+  width: 160px;
+}
+.feature .row div {
+  padding: 0 20px;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.promotional-packages div img {
+  width: 100%;
+  height: auto;
+}
+.slick-slide {
+  margin: 0 8px;
+}
+.slick-list {
+  margin: 0 -8px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: red;
+}

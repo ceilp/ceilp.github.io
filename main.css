@@ -76,6 +76,9 @@ h1 {
 }
 .accommodation-style .card-deck h4 {
   color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600 !important;
 }
 .accommodation-style .card-deck .card-header {
   padding: 25px 0 15px 0;

@@ -54,5 +54,5 @@ body {
 .slick-prev:before,
 .slick-next:before {
   font-family: initial !important;
-  color: black;
+  color: gray;
 }

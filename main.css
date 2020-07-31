@@ -78,7 +78,7 @@ h1 {
   color: white;
 }
 .accommodation-style .card-deck .card-header {
-  padding: 35px 0 10px 0;
+  padding: 25px 0 15px 0;
 }
 .card-header:first-child {
   border-radius: 25px 25px 0 0;
@@ -105,9 +105,12 @@ h1 {
   border-top-color: #ea242b;
 }
 .accommodation-style .goby {
-  margin-top: -95px;
+  margin-top: -85px;
   width: 240px;
   margin-left: 70px;
   z-index: 999;
   position: relative;
+}
+.accommodation-style .description {
+  margin-top: -140px;
 }

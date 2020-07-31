@@ -104,3 +104,10 @@ h1 {
 .arrow-red {
   border-top-color: #ea242b;
 }
+.accommodation-style .goby {
+  margin-top: -95px;
+  width: 240px;
+  margin-left: 70px;
+  z-index: 999;
+  position: relative;
+}

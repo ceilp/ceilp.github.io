@@ -51,7 +51,3 @@ body {
 .slick-list {
   margin: 0 -8px;
 }
-.slick-prev:before,
-.slick-next:before {
-  color: red;
-}

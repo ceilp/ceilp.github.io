@@ -117,3 +117,53 @@ h1 {
 .accommodation-style .description {
   margin-top: -140px;
 }
+.btn-gba-blue {
+  color: #fff;
+  background-color: #0774b9;
+  border-color: #0774b9;
+}
+.btn-gba-blue:hover {
+  color: #fff;
+  background-color: #05578a;
+  border-color: #05578a;
+}
+footer {
+  background-color: #033c67;
+  border-top: 10px solid #2298be;
+  color: #c9cfd7;
+  font-weight: 300;
+  font-size: 12px;
+}
+footer .social-media a i {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 25px;
+}
+footer h5 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+footer ul li a {
+  font-size: 13px;
+  color: #c9cfd7;
+  line-height: 2;
+}
+.newsletter .form-control {
+  height: 32px;
+  border-color: #ffffff;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  max-width: 300px;
+}
+.newsletter .form-control:focus {
+  box-shadow: none;
+}
+.newsletter .btn {
+  min-height: 30px;
+  background: #bb0b0f;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

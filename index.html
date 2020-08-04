@@ -49,11 +49,19 @@
           slidesToScroll: 4,
           arrows: true,
         });
+        $('.promotional-packages-2').slick({
+          rows: 2,
+          dots: false,
+          arrows: true,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        });
       });
     </script>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand mr-auto" href="#">
           <img
@@ -143,39 +151,44 @@
         </div>
       </div> -->
     </nav>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-gray py-0">
-      <div class="container">
-        <div class="collapse navbar-collapse ml-3" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item mr-5">
-              <a class="nav-link pl-0" href="#"
-                ><img src="img/menu_destination.png" /> Destination</a
-              >
-            </li>
-            <li class="nav-item mr-5">
-              <a class="nav-link" href="#"
-                ><img src="img/menu_activity.png" /> Activity</a
-              >
-            </li>
-            <li class="nav-item mr-5">
-              <a class="nav-link" href="#"
-                ><img src="img/menu_blog.png" /> Blog</a
-              >
-            </li>
-            <li class="nav-item mr-5">
-              <a class="nav-link" href="#"
-                ><img src="img/menu_deals.png" /> Deals</a
-              >
-            </li>
-            <li class="nav-item mr-5">
-              <a class="nav-link" href="#"
-                ><img src="img/menu_contact_us.png" /> Contact Us</a
-              >
-            </li>
-          </ul>
+    <div class="sticky-top" style="margin-top: 84px;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-gray py-0">
+        <div class="container">
+          <div
+            class="collapse navbar-collapse ml-3"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item mr-5">
+                <a class="nav-link pl-0" href="#"
+                  ><img src="img/menu_destination.png" /> Destination</a
+                >
+              </li>
+              <li class="nav-item mr-5">
+                <a class="nav-link" href="#"
+                  ><img src="img/menu_activity.png" /> Activity</a
+                >
+              </li>
+              <li class="nav-item mr-5">
+                <a class="nav-link" href="#"
+                  ><img src="img/menu_blog.png" /> Blog</a
+                >
+              </li>
+              <li class="nav-item mr-5">
+                <a class="nav-link" href="#"
+                  ><img src="img/menu_deals.png" /> Deals</a
+                >
+              </li>
+              <li class="nav-item mr-5">
+                <a class="nav-link" href="#"
+                  ><img src="img/menu_contact_us.png" /> Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <div class="container-fluid p-0">
       <div
@@ -476,8 +489,12 @@
     </div>
 
     <div class="container text-center py-5 feature">
-      <h1 class="mb-5">RECOMMENDED DESTIONATION</h1>
-      <div class="promotional-packages">
+      <h1 class="mb-2">RECOMMENDED DESTIONATION</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <div class="promotional-packages-2 mt-4">
         <div><img src="img/promotional-packages-sample.jpg" /></div>
         <div><img src="img/promotional-packages-sample.jpg" /></div>
         <div><img src="img/promotional-packages-sample.jpg" /></div>
@@ -499,8 +516,12 @@
       style="background-color: #ebeef3;"
     >
       <div class="container">
-        <h1 class="mb-5">AVAILABLE PROMOTIONS</h1>
-        <div class="promotional-packages">
+        <h1 class="mb-2">AVAILABLE PROMOTIONS</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="promotional-packages mt-4">
           <div><img src="img/promotional-packages-sample.jpg" /></div>
           <div><img src="img/promotional-packages-sample.jpg" /></div>
           <div><img src="img/promotional-packages-sample.jpg" /></div>
@@ -519,8 +540,12 @@
     </div>
 
     <div class="container text-center py-5 feature">
-      <h1 class="mb-5">WHAT'S YOUR OCCASSION?</h1>
-      <div class="promotional-packages">
+      <h1 class="mb-2">WHAT'S YOUR OCCASSION?</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <div class="promotional-packages-2 mt-4">
         <div><img src="img/promotional-packages-sample.jpg" /></div>
         <div><img src="img/promotional-packages-sample.jpg" /></div>
         <div><img src="img/promotional-packages-sample.jpg" /></div>
@@ -577,10 +602,10 @@
           <div class="col-2">
             <h5>PAYMENT</h5>
             <ul class="list-unstyled text-small">
-              <li><a href="#">BCA</a></li>
-              <li><a href="#">MANDIRI</a></li>
-              <li><a href="#">VISA</a></li>
-              <li><a href="#">MASTERCARD</a></li>
+              <li><img src="img/BCA.png" height="30" class="mb-2" /></li>
+              <li><img src="img/Mandiri.png" height="30" class="mb-2" /></li>
+              <li><img src="img/visa.png" height="30" class="mb-2" /></li>
+              <li><img src="img/mastercard.png" height="30" class="mb-2" /></li>
             </ul>
           </div>
         </div>
@@ -602,8 +627,8 @@
             </div>
           </div>
           <div class="col-6">
-            <img src="img/ios.png" width="200" />
-            <img src="img/google.png" width="200" />
+            <img src="img/app-store.png" width="200" />
+            <img src="img/google-play.png" width="200" />
           </div>
         </div>
         <div class="text-center pt-5 pb-4">

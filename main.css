@@ -50,6 +50,15 @@ h1 {
 .slick-slide {
   margin: 0 8px;
 }
+.slick-slide > div:first-child {
+  margin-bottom: 8px;
+}
+.sticky-top {
+  top: 84px;
+}
+.slick-slide img {
+  width: 100%;
+}
 .slick-list {
   margin: 0 -8px;
 }
@@ -59,7 +68,8 @@ h1 {
   color: black;
 }
 .bg-gba-repeat {
-  background-image: url('img/repeating-background.jpg');
+  background-color: #ebeef3;
+  background-image: url('img/seamless-pattern-small.png');
   background-repeat: repeat;
 }
 .bg-gba-blue {

@@ -81,8 +81,14 @@ h1 {
 .bg-gba-red {
   background-color: #ea242b;
 }
-.accommodation-style .card-deck {
-  padding: 0 160px;
+.gba-blue {
+  color: #0197e3;
+}
+.gba-yellow {
+  color: #f89522;
+}
+.gba-red {
+  color: #0197e3;
 }
 .accommodation-style .card-deck h4 {
   color: white;
@@ -176,4 +182,15 @@ footer ul li a {
   font-size: 12px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+@media (max-width: 768.998px) {
+  .accommodation-style .card-deck {
+    padding: 0 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .accommodation-style .card-deck {
+    padding: 0 160px;
+  }
 }

@@ -58,6 +58,14 @@
           slidesToScroll: 3,
         });
       });
+      // Add the following code if you want the name of the file appear on select
+      $('.custom-file-input').on('change', function () {
+        var fileName = $(this).val().split('\\').pop();
+        $(this)
+          .siblings('.custom-file-label')
+          .addClass('selected')
+          .html(fileName);
+      });
     </script>
   </head>
   <body>
@@ -118,38 +126,6 @@
           </button>
         </div>
       </div>
-
-      <!-- <div class="container bg-gray">
-        <div class="collapse navbar-collapse ml-3" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item mr-5">
-              <a class="nav-link pl-0" href="#"
-                ><img src="img/menu_destination.png" /> Destination</a
-              >
-            </li>
-            <li class="nav-item mr-5">
-              <a class="nav-link" href="#"
-                ><img src="img/menu_activity.png" /> Activity</a
-              >
-            </li>
-            <li class="nav-item mr-5">
-              <a class="nav-link" href="#"
-                ><img src="img/menu_blog.png" /> Blog</a
-              >
-            </li>
-            <li class="nav-item mr-5">
-              <a class="nav-link" href="#"
-                ><img src="img/menu_deals.png" /> Deals</a
-              >
-            </li>
-            <li class="nav-item mr-5">
-              <a class="nav-link" href="#"
-                ><img src="img/menu_contact_us.png" /> Contact Us</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div> -->
     </nav>
     <div class="sticky-top" style="margin-top: 84px;">
       <nav class="navbar navbar-expand-lg navbar-light bg-gray py-0">
@@ -196,150 +172,189 @@
       />
     </div>
     <div class="container py-5">
-      <h1 class="text-left mb-4">About GoByApps</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-      <div class="mt-5">
-        <img
-          src="img/about-us-2.png"
-          class="float-left mr-5"
-          style="width: 400px;"
-        />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </div>
-    </div>
-    <div class="container text-center py-5 feature">
-      <h1 class="mb-5">WHY US?</h1>
-      <div class="row">
-        <div class="col-sm">
-          <h5><img src="img/feature_booking.png" /> KAMI YANG URUS SEMUA</h5>
-          <p>
-            Cocok buat kamu yang sibuk! Kamu tinggal terima beres aja, karena
-            GoByApps akan membantumu mengurus visa, booking hotel, transport,
-            itinerary, sampai SimCard!
-          </p>
-        </div>
-        <div class="col-sm">
-          <h5><img src="img/feature_clock.png" /> HEMAT WAKTU</h5>
-          <p>
-            Nggak perlu buang - buang waktu berhari - hari buat nyusun itinerary
-            perjalanan. Kamu tinggal ikutin step by step yang udah disiapin oleh
-            Team GoByApps~!
-          </p>
-        </div>
-        <div class="col-sm">
-          <h5><img src="img/feature_money.png" /> HEMAT UANG</h5>
-          <p>
-            GoByApps memastikan kamu dapat harga terbaik! Dengan 3 pilihan gaya
-            liburan dari GoByApps, kamu tinggal menyesuaikan budget sesuai
-            dengan rencana liburanmu.
-          </p>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-sm">
-          <h5><img src="img/feature_tour.png" /> PRIVATE TRIP</h5>
-          <p>
-            Nggak ada minimal quota dan nggak perlu digabung sama orang asing.
-            Cocok buat kamu yang suka solo travelling atau pergi dengan
-            keluarga/sahabat.
-          </p>
-        </div>
-        <div class="col-sm">
-          <h5><img src="img/feature_calendar.png" /> JADWAL FLEKSIBEL</h5>
-          <p>
-            Gunakan jadwal GoByApps sebagai guide, tapi kamu tetap bisa ngatur
-            flow dan tempo perjalananmu sendiri. Mau dibawa santai atau
-            seru-seruan bisa banget!
-          </p>
-        </div>
-        <div class="col-sm">
-          <h5><img src="img/feature_cs.png" /> CUSTOMER SERVICE</h5>
-          <p>
-            Butuh bantuan pas lagi di jalan? Kamu bisa ngehubungin CS GoByApps
-            melalui app chat, e-mail, WhatsApp, ataupun LINE. Kami selalu siap
-            membantu!
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid py-4" style="background-color: #ebeef3;">
-      <div class="container">
-        <h1 class="gba-yellow text-left mb-4">GoByApps Business Model</h1>
-        <div>
-          <img
-            src="img/about-us-1.png"
-            class="float-right ml-5"
-            style="width: 400px; margin-top: -70px;"
-          />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-    </div>
+      <div class="row gba-v-pills">
+        <div
+          class="nav flex-column nav-pills col-4 pr-5"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          <div
+            class="nav-link active"
+            id="v-pills-customer-service-tab"
+            data-toggle="pill"
+            role="tab"
+            href="#v-pills-customer-service"
+            aria-controls="v-pills-customer-service"
+            aria-selected="true"
+          >
+            <h5><img src="img/feature_booking.png" /> CUSTOMER SERVICE</h5>
+            <p>
+              Please send us your request or inquiry through this form.
+            </p>
+          </div>
+          <div
+            class="nav-link"
+            id="v-pills-partnership-tab"
+            data-toggle="pill"
+            role="tab"
+            href="#v-pills-partnership"
+            aria-controls="v-pills-partnership"
+            aria-selected="true"
+          >
+            <h5><img src="img/feature_booking.png" /> PARTNERSHIP</h5>
+            <p>
+              Please send us your request or inquiry through this form.
+            </p>
+          </div>
 
-    <div class="container text-center py-5 feature">
-      <div class="container">
-        <h1 class="gba-red text-left mb-4">GoByApps Services</h1>
-        <div>
-          <img
-            src="img/goby.png"
-            class="float-left mr-5"
-            style="width: 300px;"
-          />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+          <div class="mt-5 additional-contact">
+            <img src="img/goby.png" />
+            <h5>Alternative Contacts</h5>
+            <p>
+              Please have your GoByApps Booking ID handy when contacting us.
+            </p>
+            <a href="#">
+              <div class="bg-gray">
+                <img src="img/email.png" class="mr-4" style="height: 75px;" />
+                CONTACT VIA EMAIL
+              </div>
+            </a>
+            <a href="#">
+              <div class="bg-gray">
+                <img src="img/email.png" class="mr-4" style="height: 75px;" />
+                CONTACT VIA WHATSAPP
+              </div>
+            </a>
+            <a href="#">
+              <div class="bg-gray">
+                <img src="img/email.png" class="mr-4" style="height: 75px;" />
+                CONTACT VIA LINE
+              </div>
+            </a>
+            <a href="#">
+              <div class="bg-gray">
+                <img src="img/email.png" class="mr-4" style="height: 75px;" />
+                CONTACT VIA WE CHAT
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="tab-content col-8 p-0" id="v-pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-customer-service"
+            role="tabpanel"
+            aria-labelledby="v-pills-home-tab"
+          >
+            <div class="pills-header">
+              <h5><img src="img/feature_booking.png" /> CUSTOMER SERVICE</h5>
+              <p>
+                Please send us your request or inquiry through this form.
+              </p>
+            </div>
+            <div class="pills-content">
+              <form>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="haveBooking"
+                    />
+                    <label class="form-check-label" for="haveBooking"
+                      >I have the Booking ID</label
+                    >
+                  </div>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option value="" selected disabled>Select Service</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="name" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="issue">Tell Us What Happened</label>
+                  <textarea class="form-control" id="issue" rows="5"></textarea>
+                </div>
+                <div class="custom-file">
+                  <input
+                    type="file"
+                    class="custom-file-input"
+                    id="customFile"
+                  />
+                  <label class="custom-file-label" for="customFile"
+                    >Attach Related File</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-gba-blue">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-partnership"
+            role="tabpanel"
+            aria-labelledby="v-pills-partnership-tab"
+          >
+            <div class="pills-header">
+              <h5><img src="img/feature_booking.png" /> PARTNERSHIP</h5>
+              <p>
+                Please send us your request or inquiry through this form.
+              </p>
+            </div>
+            <div class="pills-content">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="name" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input type="company" class="form-control" id="company" />
+                </div>
+                <div class="form-group">
+                  <label for="detail">Project Details</label>
+                  <textarea
+                    class="form-control"
+                    id="detail"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <div class="custom-file">
+                  <input
+                    type="file"
+                    class="custom-file-input"
+                    id="customFile"
+                  />
+                  <label class="custom-file-label" for="customFile"
+                    >Attach Related File</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-gba-blue">Submit</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="clearfix"></div>
     </div>
 
     <footer class="container-fluid pt-4 mt-md-5 pt-md-5 mb-0">

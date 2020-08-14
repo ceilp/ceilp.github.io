@@ -88,7 +88,7 @@ h1 {
   color: #f89522;
 }
 .gba-red {
-  color: #0197e3;
+  color: #ea242b;
 }
 .accommodation-style .card-deck h4 {
   color: white;
@@ -193,4 +193,70 @@ footer ul li a {
   .accommodation-style .card-deck {
     padding: 0 160px;
   }
+}
+.gba-v-pills .nav-pills {
+}
+.gba-v-pills .nav-link {
+  box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5px;
+  margin-bottom: 35px;
+  padding: 3% 10%;
+  cursor: pointer;
+  color: #959595;
+}
+
+.gba-v-pills .nav-link h5 {
+  font-weight: 900;
+  color: #0774b9;
+}
+.gba-v-pills .nav-pills .nav-link.active,
+.gba-v-pills .nav-pills .show > .nav-link {
+  color: #959595;
+  background-color: transparent;
+  box-shadow: 0 0.15rem 0.5rem rgba(7, 116, 185, 0.75) !important;
+}
+.gba-v-pills .tab-pane {
+  box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5px;
+}
+.gba-v-pills .tab-pane .pills-header {
+  background-color: #ebeef3;
+  border-radius: 5px 5px 0 0;
+  padding: 25px 70px;
+  color: #959595;
+}
+
+.gba-v-pills h5 {
+  font-weight: 900;
+  color: #0774b9;
+}
+
+.gba-v-pills .tab-pane .pills-content {
+  padding: 25px 70px;
+}
+
+label {
+  margin-bottom: 0;
+}
+.custom-file {
+  margin-bottom: 1rem;
+}
+.additional-contact > img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.additional-contact a > div > img {
+  height: 75px;
+  margin-right: 24px;
+}
+.additional-contact a {
+  color: #000;
+}
+.additional-contact a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.additional-contact a > div {
+  border-radius: 15px 0 0 15px;
+  margin-bottom: 15px;
 }

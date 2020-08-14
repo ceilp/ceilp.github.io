@@ -260,3 +260,47 @@ label {
   border-radius: 15px 0 0 15px;
   margin-bottom: 15px;
 }
+.faq .nav-link {
+  padding: 8% 5% 5% 5%;
+}
+.faq .nav-link p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.faq .nav-link .row > div:nth-child(2) {
+  padding-top: 20px;
+  padding-left: 0;
+}
+.faq .gba-v-pills img {
+  width: 50px;
+}
+.faq .nav-link:nth-child(3n + 1) .row div h5 {
+  color: #0197e3;
+}
+.faq .nav-link:nth-child(3n + 2) .row div h5 {
+  color: #f89522;
+}
+.faq .nav-link:nth-child(3n + 3) .row div h5 {
+  color: #ea242b;
+}
+
+.faq .gba-v-pills .tab-pane .pills-content {
+  padding: 25px;
+}
+.faq .card-header {
+  background-color: transparent;
+}
+.faq .card {
+  border: 0;
+  border-bottom: 1px solid #000 !important;
+  border-radius: 0 !important;
+}
+.faq .accordion .card:last-child {
+  border: 0 !important;
+}
+.faq .card-body {
+  padding: 15px 25px;
+}
+.faq .card-header {
+  padding-left: 10px;
+}
